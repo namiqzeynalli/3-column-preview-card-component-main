@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100%;
+}
+.main-box {
+    padding: 50px 15px;
+}
+.box {
+    height: 270px;
+    padding: 35px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1 {
+    font-family: "Big Shoulders Display",sans-serif;
+    color: hsl(0, 0%, 95%);
+}
+p, .btn {
+    font-family: "Lexend Deca",sans-serif;
+}
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 3px solid hsl(0, 0%, 95%);
+    user-select: none;
+}
+.first {
+    color: hsl(31, 77%, 52%);
+}
+.second {
+    color: hsl(184, 100%, 22%);
+}
+.third {
+    color: hsl(179, 100%, 13%);
+}
+.first:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.second:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.third:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+@media screen and (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-box {
+        height: 400px;
+        display: flex;
+        max-width: 760px;
+    }
+    .box {
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .sedans {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+    }
+    .luxury {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+    }
+}
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
